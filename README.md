@@ -11,7 +11,7 @@
 **专为专业量化团队与个人交易员打造的高性能、全后台、非 UI 模拟的同花顺实盘穿透交易网关**  
 *毫秒级极速执行 · 纯后台内存级通信 · 不抢占鼠标键盘 · 百家券商通用 · 零环境依赖*
 
-[🚀 核心优势](#-核心优势) • [📊 方案对比](#-技术方案对比) • [🛠️ 架构原理](#️-架构与原理) • [💻 快速上手](#-快速上手) • [📖 接口规范](#-restful-api-规范) • [💬 免费试用与交流](#-免费试用与技术交流)
+[🚀 核心优势](#-核心优势) • [📊 方案对比](#-技术方案对比) • [💻 快速上手](#-快速上手) • [📖 接口规范](#-restful-api-规范) • [💬 免费试用与交流](#-免费试用与技术交流)
 
 </div>
 
@@ -64,42 +64,6 @@
 | **多账户多开** | ❌ 无法多开（鼠标只有一个） | 视券商版本而定 | **✅ 完美支持单机多端口多账号并发** |
 | **环境依赖** | 复杂 Python 环境、图像识别库 | 限制 Python 3.6/3.7，依赖专用客户端 | **✅ 零依赖绿色 EXE，双击即跑** |
 
----
-
-## 🛠️ 架构与原理
-
-```mermaid
-flowchart LR
-    subgraph QuantApp["您的量化系统 / 策略程序"]
-        Strategy["量化策略 (Python / Go / C++ / Web)"]
-    end
-
-    subgraph GatewayCore["本地实盘高速交易网关 (shipan-gateway.exe)"]
-        HttpServer["高并发 HTTP REST API\n(:19312)"]
-        SecurityRouter["市场与股东代码智能路由\n(SZ:32 / SH:16)"]
-        LicenseEngine["离线高精度验签引擎\n(Ed25519)"]
-        CodecEngine["协议封包与高速动态编解码"]
-    end
-
-    subgraph DesktopTHS["同花顺客户端 (后台静默)"]
-        IpcChannel["活跃套接字 IPC 通信层"]
-        XiadanCore["同花顺交易核心 (xiadan.exe)"]
-    end
-
-    subgraph Exchange["券商与交易所"]
-        BrokerServer["券商交易柜台 (极速柜台)"]
-        Market["深交所 / 上交所"]
-    end
-
-    Strategy -->|"RESTful HTTP / JSON\n(buy / sell / cancel)"| HttpServer
-    HttpServer --> LicenseEngine
-    LicenseEngine --> SecurityRouter
-    SecurityRouter --> CodecEngine
-    CodecEngine -->|"本地活跃 IPC 穿透\n(< 5ms 亚毫秒响应)"| IpcChannel
-    IpcChannel --> XiadanCore
-    XiadanCore -->|"券商加密专线通信"| BrokerServer
-    BrokerServer --> Market
-```
 
 ---
 
@@ -160,7 +124,7 @@ entrusts = client.get_entrusts()    # 查当日委托列表
   "license": {
     "ok": true,
     "expire_date": "2026-10-29 23:59:59",
-    "remaining_days": 30
+    "remaining_days": 2
   }
 }
 ```
@@ -260,7 +224,7 @@ curl -X POST http://127.0.0.1:19312/v1/buy \
 </div>
 
 ### 🤝 我们还可以为您提供：
-- 🎯 **免费试用安装包获取**：解压即用，1 个月无限制实操体验真实交易链路；
+- 🎯 **免费试用安装包获取**：解压即用，2 天全功能无限制实操体验真实交易链路；
 - ⚡ **Level-2 高频数据接入**：千档买卖盘口、逐笔成交、逐笔委托毫秒级数据通道；
 - 📈 **量化实盘系统全套建设**：从高频行情接入、异动抢筹/打板策略，到极速穿透执行与多账户风控管理全链路私有化定制。
 

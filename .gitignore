@@ -1,0 +1,38 @@
+# Binaries & Distribution
+*.exe
+*.dll
+*.pyd
+*.zip
+*.tar.gz
+*.7z
+*.rar
+
+# Licensing & Private Keys
+*.lic
+*.pem
+*.key
+.license_keys/
+license_*.lic
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs & Diagnostics
+*.log
+logs/
+diagnostics/
+dump/

@@ -1,4 +1,4 @@
-# ⚡ 同花顺实盘高速量化交易网关 (THS Native Trade Gateway)
+# ⚡ 同花顺/通达信实盘高速量化交易网关 (THS Native Trade Gateway)
 
 <div align="center">
 

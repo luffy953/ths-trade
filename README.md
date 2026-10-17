@@ -216,10 +216,12 @@ curl -X POST http://127.0.0.1:19312/v1/buy \
 
 <div align="center">
 
-<img src="assets/wechat_qrcode.jpg" alt="微信联系名片" width="230" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 4px 16px rgba(0,0,0,0.15);"/>
+<img src="assets/wechat_qrcode.jpg" alt="微信联系名片 1 (luffy953)" width="210" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 4px 16px rgba(0,0,0,0.15); margin: 0 10px;"/>
+&nbsp;&nbsp;
+<img src="assets/wechat_qrcode2.jpg" alt="微信联系名片 2 (LUFFY9531)" width="210" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 4px 16px rgba(0,0,0,0.15); margin: 0 10px;"/>
 
-### 📱 微信：**`luffy953`**  
-*(添加时请备注：**GitHub / 实盘**，以便优先通过)*
+### 📱 微信 1：**`luffy953`** &nbsp;&nbsp;&nbsp;&nbsp; 📱 微信 2：**`LUFFY9531`**  
+*(添加时请备注：**GitHub / 实盘**，若某个号添加频繁请尝试另一个，以便优先通过)*
 
 </div>
 

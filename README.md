@@ -205,7 +205,7 @@ curl -X POST http://127.0.0.1:19312/v1/buy \
 
 ## 💬 免费试用与技术交流
 
-我们为广大量化交易员、私募团队和个人开发者提供 **通用免费试用版本（开箱即用，无需配置环境）**，欢迎添加微信体验交流：
+我们为广大量化交易员、私募团队和个人开发者提供 **通用免费试用版本（开箱即用，无需配置环境）**，欢迎添加微信或 Telegram 体验交流：
 
 <div align="center">
 
@@ -213,7 +213,7 @@ curl -X POST http://127.0.0.1:19312/v1/buy \
 &nbsp;&nbsp;
 <img src="assets/wechat_qrcode2.jpg" alt="微信联系名片 2 (LUFFY9531)" width="210" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 4px 16px rgba(0,0,0,0.15); margin: 0 10px;"/>
 
-### 📱 微信 1：**`luffy953`** &nbsp;&nbsp;&nbsp;&nbsp; 📱 微信 2：**`LUFFY9531`**  
+### 📱 微信 1：**`luffy953`** &nbsp;&nbsp;&nbsp;&nbsp; 📱 微信 2：**`LUFFY9531`** &nbsp;&nbsp;&nbsp;&nbsp; ✈️ Telegram：[**@utada_trade**](https://t.me/utada_trade)  
 *(添加时请备注：**GitHub / 实盘**，若某个号添加频繁请尝试另一个，以便优先通过)*
 
 </div>
